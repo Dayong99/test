@@ -30,7 +30,7 @@
     text-align: center;
     font-size: 12px;
     padding: 10px 0 20px;   /*填充样式:上填充 两边填充 下填充*/
-    border-bottom: 10px solid ;   /*底部内边框样式：在边框底部描绘一条宽度为10px的白色（#eee）实线（solid）*/
+    border-bottom: 8px solid #eee;   /*底部内边框样式：在边框底部描绘一条宽度为8px的白色（#eee）实线（solid）*/
   }
 
   .recommend-item {

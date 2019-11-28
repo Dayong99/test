@@ -1,6 +1,9 @@
 import axios from 'axios'
 
 export function request(config) {
+  /**
+   * axios网络封装
+   */
   // 1.创建axios的实例
   const instance = axios.create({
     baseURL:'http://106.54.54.237:8000/api/v1',
@@ -8,6 +11,9 @@ export function request(config) {
     timeout: 5000
   })
 
+  /**
+   * 拦截器
+   */
   // 2.axios的拦截器
   // 2.1.请求拦截的作用
   instance.interceptors.request.use(config => {
