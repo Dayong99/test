@@ -5,7 +5,7 @@
         超级商场
       </div>
     </nav-bar>
-    
+
     <div>
       <user-info></user-info>
     </div>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    
+
       <list-view :list-data="orderList" class="order-list"></list-view>
       <list-view :list-data="serviceList" class="service-list"></list-view>
       <list-view :list-data="moreList" class="more-list"></list-view>
@@ -46,7 +46,7 @@ import ListView from './childComps/ListView';
 
 export default {
   name: 'Profile',
-  data() { 
+  data() {
     return {
         orderList: [
           {icon: '#order', iconColor: '#ff8198', info: '我的消息'},
@@ -87,7 +87,7 @@ export default {
 .profile-nav{
   background-color: var(--color-tint);
   color: #fff;
-/* 
+/*
   position: fixed;
   left: 0;
   right: 0;
@@ -127,7 +127,7 @@ export default {
 
   .order-list, .service-list {
     margin-top: 12px ;
-    
+
   }
   .order-list, .more-list {
     margin-top: 12px;

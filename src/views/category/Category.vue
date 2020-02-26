@@ -1,14 +1,16 @@
 <template>
   <div id="category">
+<!--    顶部区域-->
     <nav-bar class="top-nav-bar">
       <div slot="center">商品分类</div>
     </nav-bar>
-    <!--    左边内容-->
-    <!--    左边导航栏-->
-    <div class="left-tab-content">
+<!--    下部区域-->
+    <div class="under-content">
+      <!--    左边内容-->
+      <!--    左边导航栏-->
       <tab-menu :categories="categories"
-                @selectItem="selectItem">
-      </tab-menu>
+                @selectItem="selectItem" class="left-tab">
+      </tab-menu >
       <tab-control :titles="['综合', '新品', '销量']"
                    @tabClick="tabClick"
                    class="right-tab2"
@@ -192,17 +194,17 @@
     color: #fff;
   }
 
-  .left-tab-content {
+  .under-content {
     position: relative;
-
     display: flex;
     overflow: hidden;
+    height: calc(100% - 44px - 49px);
   }
 
   #scroll-content {
     position: absolute;
     left: 85px;
-    padding-left: 15px;
+    padding-left: 24px;
     height: 100%;
   }
 
