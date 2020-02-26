@@ -1,15 +1,15 @@
 import axios from 'axios'
 
-export function request(config) {
+export function request (config) {
   /**
    * axios网络封装
    */
-  // 1.创建axios的实例
+    // 1.创建axios的实例
   const instance = axios.create({
-    baseURL:'http://106.54.54.237:8000/api/v1',
-    // baseURL: 'http://123.207.32.32:8000/api/vip',
-    timeout: 5000
-  })
+      baseURL: 'http://106.54.54.237:8000/api/hy',
+      // baseURL: 'http://123.207.32.32:8000/api/hy',
+      timeout: 5000
+    })
 
   /**
    * 拦截器
@@ -26,7 +26,7 @@ export function request(config) {
   instance.interceptors.response.use(res => {
     return res.data
   }, err => {
-    console.log(err);
+    console.log(err)
   })
 
   // 3.发送真正的网络请求

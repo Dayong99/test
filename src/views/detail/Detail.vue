@@ -136,7 +136,7 @@
     },
     methods: {
       ...mapActions(['addCart']),
-      imageLoad() {
+      imageLoad () {
         this.newRefresh()
         // this.$refs.scroll.refresh()
         // this.$refs.scroll.refresh();
@@ -192,7 +192,8 @@
           //   this.show = false
           //   this.message = ''
           // }, 1000)
-          this.$toast.show(res, 2000)
+          // console.log(this.$toast)
+          this.$toast.show('商品加入购物车+1')
         })
         // this.$store.dispatch('addCart', product).then(res => {
         //   console.log(res)

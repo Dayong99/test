@@ -53,19 +53,25 @@
         //   }
         // }
         // return true
+      },
+      noSelect() {
+        if (this.cartList.length === 0) return false
+        return this.cartList.every(item => !item.checked)
       }
     },
     methods: {
       checkClick() {
-        if(this.isSelectAll) {
+        if(this.isSelectAll) { //cartList全部选中时，点击全选按钮check-button时cartList变成全部取消
           this.cartList.forEach(item => item.checked = false)
         } else {
           this.cartList.forEach(item => item.checked = true)
         }
       },
       calcClick() {
-        if (!this.isSelectAll) {
-          this.$toast.show('请选择购买的商品', 2000)
+        if (this.cartList.length === 0) {
+          this.$toast.show('购物车空空如也', 2000)
+        }else if(this.noSelect) {
+          this.$toast.show('请选择购买商品', 2000)
         }
       }
     }

@@ -10,7 +10,6 @@ const Detail = () => import('../views/detail/Detail')
 // 1.安装插件
 Vue.use(VueRouter)
 
-// 2.创建router
 const routes = [
   {
     path: '',
@@ -30,13 +29,14 @@ const routes = [
   },
   {
     path: '/profile',
-    component: Profile
+    component: Profile,
   },
   {
     path: '/detail/:iid',
     component: Detail
   }
 ]
+// 2.创建router
 const router = new VueRouter({
   routes,
   mode: 'history'

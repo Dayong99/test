@@ -1,12 +1,12 @@
 <template>
-    <div class="tab-control">
-      <div v-for="(item,index) in titles"
-           class="tab-control-item"
-           :class="{active: index === currentIndex}"
-           @click="itemClick(index)">
-        <span>{{item}}</span>
-      </div>
+  <div class="tab-control">
+    <div v-for="(item,index) in titles"
+         class="tab-control-item"
+         :class="{active: index === currentIndex}"
+         @click="itemClick(index)">
+      <span>{{item}}</span>
     </div>
+  </div>
 </template>
 
 <script>
@@ -15,19 +15,19 @@
     props: {
       titles: {
         type: Array,
-        default() {
+        default () {
           return []
         }
       }
     },
-    data() {
+    data () {
       return {
         currentIndex: 0
       }
     },
     methods: {
-      itemClick(index) {
-        this.currentIndex = index;
+      itemClick (index) {
+        this.currentIndex = index
         this.$emit('tabClick', index)
       }
     }
@@ -49,7 +49,7 @@
   }
 
   .tab-control-item span {
-    padding: 5px;
+    /*padding: 5px;*/
   }
 
   .active {
@@ -58,6 +58,7 @@
 
   .active span {
     border-bottom: 3px solid var(--color-tint);
+    padding: 5px;
   }
 
 </style>

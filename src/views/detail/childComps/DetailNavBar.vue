@@ -57,6 +57,7 @@
   }
 
   .back img {
-    margin-top: 12px;
+    /*margin-top: 12px;*/
+    vertical-align: middle;
   }
 </style>
