@@ -15,6 +15,7 @@ export function getRecommend () {
   })
 }
 
+// 因为数据来源不止一处，所以需要创建类（ES6语法）
 export class Goods {
   constructor (itemInfo, columns, services) {
     this.title = itemInfo.title

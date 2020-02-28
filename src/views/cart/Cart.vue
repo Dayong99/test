@@ -5,7 +5,6 @@
           <div slot="center">购物车({{length}})</div>
         </nav-bar>
 
-
       <!--商品列表-->
       <cart-list/>
 
@@ -17,7 +16,7 @@
 <script>
   import NavBar from '../../components/common/navbar/NavBar'
 
-  import cartList from './childComps/CartList'
+  import CartList from './childComps/CartList'
   import {mapGetters} from 'vuex'
 
   import CartBottomBar from './childComps/CartBottomBar'
@@ -25,7 +24,7 @@
     name: "Cart",
     components: {
       NavBar,
-      cartList,
+      CartList,
       CartBottomBar
     },
     computed:{

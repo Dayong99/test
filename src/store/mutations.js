@@ -4,7 +4,7 @@ import {
 } from './mutation-types'
 
 export default {
-  // mutations的唯一目的就是修改state中的状态，其中的每个方法尽可能完成的事情尽可能简单
+  // mutations的唯一目的就是修改state中的状态，其中的每个方法完成的事情尽可能简单
   [ADD_COUNTER] (state, payload) {
     payload.count++
   },

@@ -30,7 +30,6 @@
           <!--          商品分类导航-->
           <tab-control :titles="['综合', '新品', '销量']"
                        @tabClick="tabClick"
-                       class="right-tab"
                        ref="rightTab">
           </tab-control>
           <!--          商品展示-->
@@ -208,10 +207,15 @@
     height: 100%;
   }
 
+  .right-tab {
+    position: relative;
+  }
+
   .right-tab2 {
     position: relative;
     z-index: 9;
     flex: 1;
+    padding-left: 9px;
   }
 
 </style>
