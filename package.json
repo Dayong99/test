@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-service": "^5.0.8",
     "postcss-px-to-viewport": "^1.1.1",
-    "svg-sprite-loader": "^4.2.1",
+    "svg-sprite-loader": "^6.0.11",
     "vue-template-compiler": "^2.6.10"
   }
 }
